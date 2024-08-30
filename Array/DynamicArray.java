@@ -94,13 +94,13 @@ public class DynamicArray {
         //STRING WRAPPER CLASS
         System.out.print("Enter size for string array: ");
         int size_str= sc.nextInt();
-        String s[]= new String[size_str];
+        String str[]= new String[size_str];
         System.out.print("Enter elements for string array: ");
-        for(int i=0; i<s.length; i++){
-            s[i]= sc.next();
+        for(int i=0; i<str.length; i++){
+            str[i]= sc.next();
         }
-        for(int i=0; i<s.length; i++){
-            System.out.print(s[i] + " ");
+        for(int i=0; i<str.length; i++){
+            System.out.print(str[i] + " ");
         }
         System.out.println();
     }
