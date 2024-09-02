@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class PalindromeElements {
 
-    //METHOD TO PRINT ARMSTRONG NUMBERS OF AN ARRAY
+    //METHOD TO PRINT PALINDROME NUMBERS OF AN ARRAY
     static void palindrome(int a[]){
         for(int i=0; i<a.length; i++){
             int sum=0, rem=0;
