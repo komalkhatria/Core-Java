@@ -28,6 +28,13 @@ public class PredefinedArraySorting {
         Arrays.sort(arr);
         System.out.print("Sorted array: ");
         display(arr);
+        System.out.println();
+
+        //PRINTING FIRST, MID AND LAST ELEMENTS AFTER SORTING THE ARRAY
+        System.out.println("Elements of sorted array: ");
+        System.out.println("First: " + arr[0]);
+        System.out.println("Mid: " + arr[arr.length/2]);
+        System.out.println("Last: " + arr[arr.length-1]);
 
     }
 }
