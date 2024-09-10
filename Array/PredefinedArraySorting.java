@@ -3,6 +3,16 @@ import java.util.Arrays;
 public class PredefinedArraySorting {
 
     static void display(int a[]){
+        int c=a[0];
+        a[0]= a[a.length-1];
+        a[a.length-1]= c;
+        for(int i=0; i<a.length; i++){
+            System.out.print(a[i] + " ");
+        }
+    }
+
+    static void swapValues(int a[]){
+
         for(int i=0; i<a.length; i++){
             System.out.print(a[i] + " ");
         }
@@ -32,9 +42,17 @@ public class PredefinedArraySorting {
 
         //PRINTING FIRST, MID AND LAST ELEMENTS AFTER SORTING THE ARRAY
         System.out.println("Elements of sorted array: ");
-        System.out.println("First: " + arr[0]);
-        System.out.println("Mid: " + arr[arr.length/2]);
-        System.out.println("Last: " + arr[arr.length-1]);
+        int first= arr[0];
+        int mid= arr[arr.length/2];
+        int last= arr[arr.length-1];
+        System.out.println("First: " + first);
+        System.out.println("Mid: " + mid);
+        System.out.println("Last: " + last);
+
+        //CALLING METHOD TO SWAP FIRST AND LAST ELEMENT
+        swapValues(arr);
+
+
 
     }
 }
