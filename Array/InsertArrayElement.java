@@ -4,14 +4,16 @@ public class InsertArrayElement {
     //METHOD TO INPUT ELEMENT AT A PARTICULAR INDEX
     static int[] insertElement(int arr[]){
         Scanner sc= new Scanner(System.in);
-        System.out.print("Enter index to input element: ");
-        int index= sc.nextInt();
-        if(index<arr.length-1){
-            System.out.print("Enter the value of index " + index + ": ");
-            arr[index]=sc.nextInt();
-        }
-        else{
-            System.out.println("PLEASE INPUT INDEX LESS THAN " + arr.length + "!");
+        for(int i=0; i<arr.length; i++){
+            System.out.print("Enter index to input element: ");
+            int index= sc.nextInt();
+            if(index<arr.length){
+                System.out.print("Enter the value of index " + index + ": ");
+                arr[index]=sc.nextInt();
+            }
+            else{
+                System.out.println("PLEASE INPUT INDEX LESS THAN " + arr.length + "!");
+            }
         }
         return arr;
     }
@@ -31,8 +33,6 @@ public class InsertArrayElement {
         int arr[]= new int[size];
 
         int a[]= insertElement(arr);    //STORING THE ARRAY THAT IS RETURNING AFTER INSERTING ELEMENT
-        insertElement(arr);
-        insertElement(arr);
         displayArray(a);
     }
 }
