@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class LinearSearch {
     static void searchElement(int a[]){
         Scanner sc= new Scanner(System.in);
