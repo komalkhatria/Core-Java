@@ -1,16 +1,20 @@
 import java.util.Scanner;
 public class UniqueElements {
-    //METHOD TO REMOVE DUPLICATES FROM AN ARRAY
+    //METHOD TO PRINT UNIQUE ELEMENTS OF AN ARRAY
     static void printUniqueElements(int arr[]){
-
+        boolean visited[]= new boolean[arr.length];
         for(int i=0; i<arr.length; i++){
+            if(visited[i]){     //SKIP THE VISITED DUPLICATE
+                continue;
+            }
+            boolean flag= false;        //MARKS UNIQUE ELEMENTS
             for(int j=i+1; j<arr.length; j++){
                 if(arr[i]==arr[j]){
-                    arr[i]=-1;                          //25285926 is not removing 2
-                    arr[j]=-1;
+                    visited[j]=true;
+                    flag=true;
                 }
             }
-            if(arr[i] > -1){
+            if(flag==false){
                 System.out.print(arr[i] + " ");
             }
         }
@@ -41,6 +45,6 @@ public class UniqueElements {
         System.out.println();
 
         System.out.print("Array (only unique elements): ");
-        printUniqueElements(arr);  //ARRAY AFTER ELEMENT DELETION
+        printUniqueElements(arr);  //ARRAY AFTER DUPLICATE ELEMENTS DELETION
     }
 }
