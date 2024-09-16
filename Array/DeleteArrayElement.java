@@ -47,6 +47,5 @@ public class DeleteArrayElement {
 
         deleteElement(arr);   //ARRAY AFTER ELEMENT DELETION
 
-
     }
 }
