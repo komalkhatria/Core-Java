@@ -4,5 +4,7 @@ public class Throw_1 {
         //throw KEYWORD IS USED TO THROW AN EXCEPTION EXPLICITLY
         //WE SPECIFY THE EXCEPTION OBJECT TO BE THROWN
         throw new ArithmeticException("An exception");      //THE EXCEPTION HAS SOME MESSAGE WITH IT WHICH PROVIDES ERROR DSCRIPTION
+
+        System.out.println("Program end");      //UNREACHABLE STATEMENT AS throw ACT AS RETURN STATEMENT
     }
 }
