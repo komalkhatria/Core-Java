@@ -12,7 +12,7 @@ class Parent2{
         System.out.println("Parent method");
     }
 }
-public class TestExceptionChild2 extends Parent{
+public class TestExceptionChild2 extends Parent2{
     void msg() throws ArithmeticException{
         try{
             super.msg();
