@@ -13,7 +13,7 @@ class Parent5{
         System.out.println("Parent method");
     }
 }
-public class TestExceptionChild5 extends Parent{
+public class TestExceptionChild5 extends Parent5{
     void msg() throws IOException{
         try{
             super.msg();
