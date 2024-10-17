@@ -12,3 +12,12 @@ public class Throws {
         show();
     }
 }
+
+/*public class Throws extends RuntimeException{
+    static void show() throws Throws{
+        System.out.println("Throwing custom class as exception");
+    }
+    public static void main(String[] args) {
+        show();
+    }
+}*/
