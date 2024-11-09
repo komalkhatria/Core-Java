@@ -20,7 +20,7 @@ public class StringBuffer1 {
         System.out.println(sb1);
 
 
-        sb1= sb1.append(" is dynamic");         //ERROR- cannot assign value to final variable
-        System.out.println(sb1);
+        /*sb1= sb1.append(" is dynamic");         //ERROR- cannot assign value to final variable
+        System.out.println(sb1);*/
     }
 }
