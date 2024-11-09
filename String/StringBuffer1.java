@@ -10,11 +10,15 @@ public class StringBuffer1 {
         sb= sb.append(" to learn");
         System.out.println(sb);        // Java is fun to learn
 
+        sb= new StringBuffer("and code");       // object reassign
+        System.out.println(sb);         //and code
+
         final StringBuffer sb1= new StringBuffer("Python");
         System.out.println(sb1);
 
         sb1.append(" is easy");
         System.out.println(sb1);
+
 
         sb1= sb1.append(" is dynamic");         //ERROR- cannot assign value to final variable
         System.out.println(sb1);
