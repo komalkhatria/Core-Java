@@ -32,5 +32,12 @@ public class StringReverse {
         }
         System.out.println(str2);
 
+
+        //COUNT CHARACTERS IN A STRING
+        int count=0;
+        for(int i=0; i<c.length; i++){
+            count++;
+        }
+        System.out.println("String length: " + count);
     }
 }
