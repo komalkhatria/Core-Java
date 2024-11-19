@@ -10,14 +10,27 @@ public class StringMethods {
         //charAt()
         System.out.println(s.charAt(7));    //m
 
+        //compareTo()
+        System.out.println(s.compareTo(s1));    //-32
+
         //concat()
         System.out.println(s.concat(" Concept"));    //System Design Concept
+
+        //contains()
+        System.out.println(s.contains("Des"));      //true
+
+        //endsWith()
+        System.out.println(s.endsWith("s"));        //false
 
         //equals()
         System.out.println(s.equals(s1));   //false
 
         //equalsIgnoreCase()
         System.out.println(s.equalsIgnoreCase(s1));     //true
+
+
+        //indexOf()
+        System.out.println(s.indexOf('t'));     //3
 
         //substring()
         System.out.println(s.substring(3));     //tem Design
